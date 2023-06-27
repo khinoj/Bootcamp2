@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: darkolivegreen;
+    border-bottom: 10px solid tan;
+}
+
+nav ul {
+    text-align: right;
+    list-style-type: none; 
+  }
+
+  li {
+    color: white;
+    display: inline;
+    padding: 10px;
+  }
+
+  header {
+    text-align: center;
+    font-size: 24px;
+  }
