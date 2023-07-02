@@ -17,6 +17,14 @@ h1 {
   font-size: 200%;
 }
 
+p::selection {
+  text-decoration: underline;
+}
+
+#after:hover  {
+    cursor: grab;
+}
+
 h2 {
   margin: 2% 0;
   font-size: 180%;
