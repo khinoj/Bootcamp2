@@ -1,3 +1,4 @@
+
 var site1El = document.querySelector(".site1");
 var site2El = document.querySelector(".site2");
 var site3El = document.querySelector(".site3");
