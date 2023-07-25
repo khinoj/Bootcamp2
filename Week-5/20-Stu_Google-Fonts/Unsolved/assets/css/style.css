@@ -6,6 +6,8 @@
   --light: #fffaf7;
 }
 
+/* font-family: 'Bungee Spice', cursive; */
+
 ::selection {
   color: var(--brown);
   background-color: var(--light);
@@ -13,6 +15,7 @@
 
 .custom-navbar {
   background-color: var(--teal);
+  font-family: 'Bungee Spice', cursive;
 }
 
 .custom-navbar a {
@@ -27,6 +30,7 @@
 .hero {
   background-color: var(--lightteal);
   color: var(--teal);
+  font-family: 'Bungee Spice', cursive;
 }
 
 .custom-btn {

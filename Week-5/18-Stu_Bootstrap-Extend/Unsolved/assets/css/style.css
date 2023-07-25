@@ -8,3 +8,6 @@
 
 /* Add your custom class style definitions here */
 /* HINT: Apply CSS variables using `var(--brown)` syntax as your property value */
+body nav.custom-navbar {
+  background-color:var(--teal);
+}
