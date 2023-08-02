@@ -9,3 +9,7 @@ fetch(
     console.log(data);
   });
 // Parameter explanation.
+//per_page=10 showing 10 items per page
+// state=open showing only open states
+//&sort=created sort by created
+//&direction = desc sory by descending
