@@ -2,8 +2,8 @@
 var funnyCase = (string) => {
   var newString = "";
   for (var i = 0; i < string.length; i++) {
-    if (i % 2 === 0) newString += string[i].toLowerCase();
-    else newString += string[i].toUpperCase();
+    if (i % 2 === 0) newString += string[i].toLowerCase(); //even lower case
+    else newString += string[i].toUpperCase(); //odd uppercase includes spaces for both
   }
   return newString;
 };
@@ -25,6 +25,7 @@ var map = (arr, cb) => {
 
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+//numbers is arr on line 17 and elements is now cb
 var doubled = map(numbers, (element) => {
   return element * 2;
 });
@@ -62,13 +63,13 @@ var netflixQueue = {
     "The Matrix",
     "Eternal Sunshine of the Spotless Mind",
     "Fight Club"
-  ],
+  ], //object watchmovie is a key and the function name.
   watchMovie: () => {
     netflixQueue.queue.pop();
-  },
+  }, // same as watchMovie
   addMovie: (movie) => {
     netflixQueue.queue.unshift(movie);
-  },
+  }, //same as watchMovie
   printQueue: () => {
     var list = "";
     for (var i = netflixQueue.queue.length - 1; i >= 0; i--) {
@@ -78,6 +79,8 @@ var netflixQueue = {
     console.log(list);
   }
 };
+
+
 
 console.log("Printing movie queue!\n");
 netflixQueue.printQueue();
@@ -89,3 +92,11 @@ console.log("\nAdding a movie!\n");
 netflixQueue.addMovie("Black Swan");
 console.log("Printing movie queue!\n");
 netflixQueue.printQueue();
+
+
+
+const sum = (num1, num2) => {
+  return num1 + num2;
+}
+
+const result = sum(5, 10);

@@ -46,3 +46,28 @@ var matrix = [
 ];
 
 countMatrix(matrix);
+
+
+//tutor
+const doubled = (num1) => { 
+  return num1 * 2;
+}
+
+const doubled2 = num1 => {
+  return num1 * 2;
+}
+
+const doubled3 = num1 => num1 *2;
+
+
+for(var i = 0; i < 5; i++){
+  console.log(i)
+}
+
+for(var i = 0; i < 5; i++){
+  console.log(i);
+}
+
+console.log(num1)
+
+var num1 = 5
