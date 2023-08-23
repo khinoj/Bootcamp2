@@ -1,0 +1,15 @@
+Hello
+hello2
+undefined
+undefined
+undefined
+undefined
+test
+undefined
+C:\Program Files\nodejs\node.exe
+undefined
+undefined
+undefined
+0
+
+max
