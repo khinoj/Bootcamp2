@@ -6,6 +6,7 @@ class BlogPost {
     }
 
     // Regex for only allowing uppercase, lowercase, numbers, dashes, and underscores.
+    //RegExp is a js built in. 
     const pattern = new RegExp('([A-Za-z0-9_-]+$)');
 
     // Checks to see that authorName matches Regex pattern. If it doesn't an error is thrown.
