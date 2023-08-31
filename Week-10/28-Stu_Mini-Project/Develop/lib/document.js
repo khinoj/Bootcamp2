@@ -1,8 +1,33 @@
 // TODO: Import your Header, TaskList, and TaskListItem
+class Component {
+  render() {
+    throw new Error (`Child class musy implement render() method.`)
+  };
+  renderInnerHTML() {
+    // what
+    var children = card.children;
+    for (var i = 0; index < children.length; i++) {
+      var childTask = children[i];
+      
+    }
+  }
+}
+
+class Header extends Component {
+  render() {
+    return `<header class="header"><h1>Todo Today</h1><p>${DATE_HERE}</p></header>`
+  };
+}
 
 function createDocument(title, tasks = []) {
+  console.log(title);
+  console.log(tasks);
   // TODO: Create a new Header
+  let head = new Header ()
+  console.log(head.render());
   // TODO: Create new TaskListItems from the provided tasks
+
+
   // TODO: Add TaskListItems to a new TaskList
 
   // TODO: Modify the template below to include your title, Header, and TaskList
