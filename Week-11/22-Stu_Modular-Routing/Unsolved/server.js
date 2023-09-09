@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 
 // TODO import the routes
+const routes = require('./routes/index')
 
 // Helper functions for reading and writing to the JSON file
 const { readFromFile, readAndAppend } = require('./helpers/fsUtils');
@@ -20,6 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // TODO apply middleware to use /api
+
 
 // GET Route for homepage
 app.get('/', (req, res) =>
