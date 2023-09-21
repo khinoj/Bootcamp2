@@ -34,6 +34,15 @@ User.init(
   },
   {
     // TODO: Add hooks here
+    hooks: {
+      beforeCreate: async (user) => {
+        const hashedPassword = await bcrypt.hash(user.password, 10);
+        user.password = hashedPassword;
+
+      }
+    }
+
+
 
     sequelize,
     timestamps: false,
