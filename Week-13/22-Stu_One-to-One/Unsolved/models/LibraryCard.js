@@ -17,10 +17,13 @@ LibraryCard.init(
       defaultValue: UUIDV4,
     },
     // TODO: Add a comment describing what this column holds information for 
+    // make this a column inside the table with integer type with a foreign key model reader,  id
     reader_id: {
       type: DataTypes.INTEGER,
       references: {
         // TODO: Add a comment describing where `reader` comes from
+        // model is from reader.js
+        // and its looking at the id: section
         model: 'reader',
         key: 'id',
       },
