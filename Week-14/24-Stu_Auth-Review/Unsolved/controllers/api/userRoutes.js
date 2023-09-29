@@ -4,6 +4,7 @@ const { User } = require('../../models');
 router.post('/login', async (req, res) => {
   try {
     // TODO: Add a comment describing the functionality of this expression
+    // promise. Find user email if not correct email give 400 message
     const userData = await User.findOne({ where: { email: req.body.email } });
 
     if (!userData) {
@@ -14,6 +15,7 @@ router.post('/login', async (req, res) => {
     }
 
     // TODO: Add a comment describing the functionality of this expression
+    // promise. check password
     const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
@@ -24,6 +26,7 @@ router.post('/login', async (req, res) => {
     }
 
     // TODO: Add a comment describing the functionality of this method
+    // if email and password are correct login with message
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
