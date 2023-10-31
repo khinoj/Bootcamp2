@@ -5,7 +5,10 @@ const { Student, Course } = require('../models');
 // TODO: Create an aggregate function to get the number of students overall
 const headCount = async () => {
   // Your code here
-  const numberOfStudents = await Student.aggregate();
+  const numberOfStudents = await Student.aggregate([
+    {$match: {} },
+    {$count: 'total'}
+  ]);
   return numberOfStudents;
 }
 

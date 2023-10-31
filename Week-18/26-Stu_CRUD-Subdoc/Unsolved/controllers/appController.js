@@ -23,6 +23,7 @@ module.exports = {
     }
   },
   // TODO: Add comments to the functionality of the createApplication method
+  // 
   async createApplication(req, res) {
     try {
       const application = await Application.create(req.body);
