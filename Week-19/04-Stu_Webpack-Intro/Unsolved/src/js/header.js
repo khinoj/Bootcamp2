@@ -6,3 +6,5 @@ export const headerClick = () => {
     header.style.color = 'blue';
   }
 };
+
+//changes the header color based on user click

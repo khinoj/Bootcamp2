@@ -10,6 +10,19 @@ Click on "Expand View" to get more information about the metrics. Make note of t
 
 * (include as many bullet points as necessary)
 
+
+## Mobile Lighthouse
+    - Performance 84
+    - Accessibility 92
+    - Best Practices 100
+    - SEO 91
+
+## Desktop Lighthouse
+    - Performance 80
+    - Accessibility 94
+    - Best Practices 100
+    - SEO 89
+
 ## PWA optimizations
 
 Scroll down the audit report until you see the `PWA` section that lists the PWA optimizations. Make note of the various aspects of a PWA below (the first one is done for you):
