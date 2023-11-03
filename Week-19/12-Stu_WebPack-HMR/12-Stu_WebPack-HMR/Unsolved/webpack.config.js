@@ -18,6 +18,9 @@ module.exports = {
     }),
   ],
   // TODO: add devServer config
+  devServer: {
+    hot: 'only',
+  },
   module: {
     rules: [
       {
