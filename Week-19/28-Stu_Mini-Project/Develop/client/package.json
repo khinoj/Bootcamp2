@@ -1,13 +1,14 @@
 {
   "name": "Contact",
   "scripts": {
-    "dev": "",
-    "build": "",
-    "start": ""
+    "dev": "webpack-dev-server",
+    "build": "webpack --mode production",
+    "start": "webpack --watch"
   },
   "author": "2U",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@babel/plugin-proposal-object-rest-spread": "^7.20.7"
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "webpack-cli": "^5.1.4"
   }
 }

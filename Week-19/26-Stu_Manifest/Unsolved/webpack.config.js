@@ -22,6 +22,20 @@ module.exports = () => {
       new GenerateSW(),
       new WebpackPwaManifest({
         // TODO: Create a manifest.json:
+      name: "Test Manifest",
+      short_name: "Manifest",
+      description: " Web pack manifest",
+      background_color: "#7eb4e2",
+      theme_color: "#7eb4e2",
+      display: "standalone",
+      start_url: "./",
+      icons: [
+        {
+          src: path.resolve('./assets/images/logo.png'),
+          sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+          purpose: "any maskable",
+        }
+      ]
       }),
      
     ],
