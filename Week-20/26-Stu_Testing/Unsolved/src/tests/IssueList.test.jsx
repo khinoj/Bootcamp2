@@ -1,6 +1,7 @@
 import pretty from 'pretty';
 import { render } from '@testing-library/react';
 // TODO: Import the IssueList component
+import { IssueList } from '../components/IssueList';
 
 const issues = [
   {

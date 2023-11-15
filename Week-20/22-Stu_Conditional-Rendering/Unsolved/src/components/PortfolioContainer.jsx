@@ -9,6 +9,7 @@ export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
   // TODO: Add a comment describing the functionality of this method
+  // Several if statements to find out what page the user is on. 
   const renderPage = () => {
     if (currentPage === 'Home') {
       return <Home />;
@@ -27,6 +28,7 @@ export default function PortfolioContainer() {
   return (
     <div>
       {/* // TODO: Add a comment describing what we are passing as props */}
+      {/* current page and handlePageChange */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* // TODO: Add a comment explaining what is happening on the following line */}
       <main className="mx-3">{renderPage()}</main>

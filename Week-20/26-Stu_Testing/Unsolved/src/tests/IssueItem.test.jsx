@@ -1,6 +1,7 @@
 import pretty from 'pretty';
 import { render } from '@testing-library/react';
 // TODO: Import the IssueItem component here
+import { IssueItem } from '../components/IssueItem';
 
 const issue = {
   url: 'https://api.github.com/repos/microsoft/vscode/issues/68',

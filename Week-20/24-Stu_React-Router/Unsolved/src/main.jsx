@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 // Todo: Bring in the appropriate imports
-import { } from 'react-router-dom';
+import { createBrowserRouter, } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
