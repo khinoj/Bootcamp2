@@ -1,13 +1,16 @@
 const express = require('express');
 // TODO: Add a comment describing the functionality of this expression
+// apollo class and middleware function
 const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
 
 // TODO: Add a comment describing the functionality of this expression
+// typedefs: graphql schema, resolvers - help with queries. 
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
+// server
 const server = new ApolloServer({
   typeDefs,
   resolvers
@@ -16,6 +19,7 @@ const server = new ApolloServer({
 const app = express();
 
 // TODO: Add a comment describing the functionality of this async function
+// starting the apollo server with express and database
 const startApolloServer = async () => {
   await server.start();
   
@@ -33,4 +37,5 @@ const startApolloServer = async () => {
 };
 
 // TODO: Add a comment describing this functionality
+// calls function to start server 
 startApolloServer();

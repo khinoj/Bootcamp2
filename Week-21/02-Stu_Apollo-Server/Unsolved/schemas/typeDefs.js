@@ -7,7 +7,7 @@ const typeDefs = `
     creditHours: Int
   }
 
-  # TODO: Add a comment describing the functionality of this statement
+  # TODO: Add a comment describing the functionality of this statement --entry points. classes can be queried. 
   type Query {
     classes: [Class]
   }
