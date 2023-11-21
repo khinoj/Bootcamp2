@@ -61,8 +61,9 @@ const resolvers = {
 
         return thought;
       }
-      throw AuthenticationError;
-      ('You need to be logged in!');
+      throw AuthenticationError ('You need to be logged in!');
+      
+      
     },
     addComment: async (parent, { thoughtId, commentText }, context) => {
       if (context.user) {

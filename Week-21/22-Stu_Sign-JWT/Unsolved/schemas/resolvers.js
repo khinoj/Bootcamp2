@@ -21,25 +21,33 @@ const resolvers = {
   Mutation: {
     // TODO: Add comments to each line of code below to describe the functionality below
     addUser: async (parent, args) => {
+      // creates the new user and there info is in the args parameter
       const user = await User.create(args);
+      // makes a json web token for the user
       const token = signToken(user);
 
+      // returns token and user data. 
       return { token, user };
     },
     // TODO: Add comments to each line of code below to describe the functionality below
     login: async (parent, { email, password }) => {
+      //find the user email
       const user = await User.findOne({ email });
 
+      // if not the user email or no email throw error 
       if (!user) {
         throw AuthenticationError
       }
 
+      // checking for correct password
       const correctPw = await user.isCorrectPassword(password);
 
+      // not correct pw error
       if (!correctPw) {
         throw AuthenticationError
       }
 
+      // assign a new token with user data.
       const token = signToken(user);
       return { token, user };
     },
