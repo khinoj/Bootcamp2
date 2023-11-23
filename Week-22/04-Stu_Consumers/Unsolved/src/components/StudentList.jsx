@@ -4,6 +4,7 @@ import { useStudentContext } from '../utils/StudentContext';
 
 export default function StudentList() {
   // TODO: Import the students, actions and majors from our custom useStudentContext hook
+  const { students, addStudent, removeStudent, majors} = useStudentContext();
 
   // Initialize state for new students and new student majors
   const [newStudentName, setNewStudentName] = useState('');
@@ -33,10 +34,7 @@ export default function StudentList() {
                     <td>
                       <button
                         type="button"
-                        onClick={() => {
-                          // TODO: Update the button's onClick so that it will remove students
-                          // Your code here
-                        }}
+                        onClick={() =>  removeStudent(student.id) }
                       >
                         <span role="img" aria-label="close">
                           ✖️
