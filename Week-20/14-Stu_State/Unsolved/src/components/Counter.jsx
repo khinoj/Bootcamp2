@@ -26,7 +26,8 @@ export default function Counter() {
     <div className="card text-center">
       <div className="card-header bg-primary text-white">Click Counter!</div>
       {/* TODO: Add a comment that explains what props are getting passed to CardBody */}
-      {/* count, handleIncrement, handleDecrement */}
+      {/* count, handleIncrement, handleDecrement */} 
+      {/* exporting to cardbody  */}
       <CardBody
         count={count}
         handleIncrement={handleIncrement}

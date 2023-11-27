@@ -7,7 +7,7 @@ function Thermostat() {
 
   // TODO: Use the `useEffect` Hook to set the `document.title` to the current temperature
   // YOUR CODE HERE
-  //
+  // only does one time due to array at the end.
   useEffect(() => {
     const tempCount = localStorage.getItem('TempCount');
 
