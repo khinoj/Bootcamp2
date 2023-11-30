@@ -11,6 +11,7 @@ import './style.css';
 
 // TODO: Add a comment describing the functionality of loadStripe
 // Your comment here
+// The loadStripe function asynchronously loads the Stripe.js script and initializes a Stripe object
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
@@ -19,6 +20,7 @@ const Cart = () => {
 
   // TODO: Add a comment describing the functionality of the useEffect hook in this instance
   // Your comment here
+  // if something in cart go to checkout 
   useEffect(() => {
     if (data) {
       stripePromise.then((res) => {

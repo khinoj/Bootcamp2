@@ -1,5 +1,37 @@
 // TODO: Create type definitions for `Category`, `Product`, `Order` and `User` above the `Auth` type
 const typeDefs = `
+
+  type Category {
+    _id: ID
+    name: String!
+  }
+
+  type Product {
+    _id: ID
+    name: String!
+    description: String
+    image: String
+    price: Float
+    quantity: Int
+    // assume one Category Cloths, Watch, Food
+    category: Category
+  }
+
+  type Order {
+    _id: ID
+    purchaseDate: String
+    // Can have several products example shopping cart
+    product: [Product]
+  }
+
+  type User {
+    _id: ID
+    firstName: String!
+    lastName: String!
+    email: String!
+    orders(_id: ID!): Order
+  }
+
   type Auth {
     token: ID
     user: User
